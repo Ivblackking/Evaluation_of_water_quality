@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Predicting
+{% endblock %}
+
+{% block main %}
+    <div class = "predict-section">
+        <h5 class = "hint" id = "second-step"><a class = "hint-num">Second step:</a> choose your evaluation options</h5>
+        <form method="post">
+            <div class = "checkboxes">
+                <input type = "checkbox" id = "drinking" name = "drinking" value = "Drinking">
+                <label for="drinking">Potability</label><br>
+                <input type="checkbox" id = "wellType" name="wellType" value="Well type">
+                <label for="wellType">Well type</label>
+            </div>
+            <input type="submit" id = "predict" class = "button" name = "predict" value = "PREDICT">
+            <p id = "predicting-info">{{predictinfo | default(' ')}}</p>
+        </form>
+        <table class = "table" id = "table-result">
+            <thead>
+                <tr><th>Safe to drink?</th><th>Type of water source</th></tr>
+            </thead>
+            <tbody>
+                <tr style = "color: gold;"><td>{{drinking | default('--')}}</td><td>{{well_type | default('--')}}</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <form method="post">
+        <input type="submit" class = "button" id="new-evaluation" name="new-evaluation" value="New evaluation">
+    </form>
+{% endblock%}

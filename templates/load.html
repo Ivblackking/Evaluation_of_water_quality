@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Loading
+{% endblock %}
+
+{% block main %}
+    <div class = "load-section">
+        <div class = "hint" id = "load-hint">
+            <h5 id = "first-step"><a class = "hint-num">First step:</a> upload chemical profile of your water simple</h5>
+            <h6 id = "profile-example">(Example of the requested chemical profile can be found 
+                <a style="color: aqua;" href="https://docs.google.com/spreadsheets/d/1YLdWJOUYF9e7p0PoJWEEfSBronqjMtG7i-OpBGqjThE/edit?usp=sharing" target="_blank">here</a>)
+            </h6>
+        </div>
+        <form method="post" enctype = "multipart/form-data">
+            <input type = "file" class = "choose" name = "choose">
+            <input type = "submit" id = "load" name = "load" class = "button" value = "Load profile">
+        </form>
+    </div>
+{% endblock%}

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Secular One", sans-serif;
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    z-index: 500;
+}
+
+header > h1 {
+    font-weight: bold;
+    font-size: 50px;
+    z-index: 1000;
+}
+
+header > h3 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    color: aqua;
+    z-index: 1000;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 500;
+}
+
+.get-start-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 500;
+}
+
+.get-start-section p {
+    width: 500px;
+    text-align: justify;
+    text-justify: auto;
+}
+
+#button-start {
+    margin-top: 20px;
+}
+
+.load-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 500;
+}
+
+#load-hint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.predict-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 500;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#predicting-info {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: chartreuse;
+}
+
+.button {
+    background-color: red;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 480px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.choose {
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 4px;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.choose::file-selector-button {
+    background: red;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    
+}
+
+#load {
+    margin-top: 10px;
+}   
+
+#predict {
+    margin-top: 5px;
+}
+
+#table-result {
+    width: 400px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: white;
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.95;
+}
+
+.hint {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hint-num {
+    color: aqua;
+}
+
+.hint-num:hover {
+    color: aqua;
+}
+
+#profile-example {
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+  

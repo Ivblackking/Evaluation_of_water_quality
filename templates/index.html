@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Start
+{% endblock %}
+
+{% block main %}
+    <div class = "get-start-section">
+        <p>
+            This application allows to identify a type and drinking quality
+            of a water sample according to its chemical composition profile
+            with the use of artificial intelligence algorithm. An example
+            of typical chemical profile which should be used for application 
+            functioning based on essential 51 chemical elements can be found
+            <a style="color: aqua;" href="https://docs.google.com/spreadsheets/d/1YLdWJOUYF9e7p0PoJWEEfSBronqjMtG7i-OpBGqjThE/edit?usp=sharing" target="_blank">here</a>.
+            If any water sample does not contain complete information on all
+            elements, you can leave an empty space for the lacking element.
+        </p>
+        <form method="post">
+            <input type = "submit" class = "button" id = "button-start" name = "button-start" value = "GET START">
+        </form>
+    </div>
+{% endblock%}
